@@ -1,0 +1,36 @@
+
+@import '../variables.scss';
+
+header {
+    flex: 1 1 100%;
+    background-color:mat-color($primary);
+}
+
+.main {
+
+    display: flex;
+
+    nav {
+        flex: 1 6 calc(20% - 10px);
+        margin-right:10px;
+    }
+    aside {
+        flex: 1 6 calc(20%);
+    }
+    article {
+        flex: 3 1 calc(60% - 10px);
+        margin-right:10px;
+    }
+
+    nav {
+        // background-color: white;
+    }
+
+}
+
+
+
+footer {
+    flex: 1 1 100%;
+    background-color:mat-color($primary);
+}
