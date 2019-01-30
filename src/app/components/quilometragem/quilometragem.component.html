@@ -19,7 +19,7 @@
 
         </mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-image src="/assets/eventos/{{evento.img}}" alt="Photo of a Shiba Inu">
+      <img mat-card-image src="assets/eventos/{{evento.img}}" alt="Photo of a Shiba Inu">
       <mat-card-content>
         <div fxLayout="row wrap" fxLayoutAlign="center">
           <div *ngFor="let participacao of evento.participacoes" fxFlex="100" (click)="openDialog(participacao)">
