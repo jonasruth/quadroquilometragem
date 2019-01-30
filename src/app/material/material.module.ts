@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatButtonModule, MatCardModule, MatListModule, MatInputModule, MatIconModule, MatChipsModule, MatDialogModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatListModule, MatInputModule, MatIconModule, MatChipsModule, MatDialogModule, MatSnackBar, MatSnackBarModule} from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
@@ -16,6 +16,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatIconModule,
     MatChipsModule,
     MatDialogModule,
+    MatSnackBarModule,
   ],
   exports: [
     FlexLayoutModule,
@@ -26,6 +27,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatIconModule,
     MatChipsModule,
     MatDialogModule,
+    MatSnackBarModule,
     // QuilometragemDialogComponent
   ],
   entryComponents: [

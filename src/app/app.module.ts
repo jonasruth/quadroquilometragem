@@ -9,6 +9,7 @@ import { MyMaterialModule } from './material/material.module';
 import { JoinPipe } from './pipe/join.pipe';
 import { QuilometragemComponent, QuilometragemDialogComponent } from './components/quilometragem/quilometragem.component';
 import { FormsModule } from '@angular/forms';
+import { MessagesComponent } from './messages/messages.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { FormsModule } from '@angular/forms';
     QuilometragemComponent,
     QuilometragemDialogComponent,
     JoinPipe,
+    MessagesComponent,
   ],
   imports: [
     BrowserModule,

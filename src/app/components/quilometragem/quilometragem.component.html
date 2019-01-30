@@ -1,6 +1,6 @@
-<section>
+<section id="quadro-quilometragem" #quadroQuilometros>
 
-  <h1 class="section-title">Quadro de Quilometragem 2019</h1>
+  <h1 class="section-title">Quadro de Quilometros 2019 <button mat-icon-button (click)="captureScreen()"><mat-icon>get_app</mat-icon></button></h1>
 
   <div fxFlexFill fxLayout="row wrap" fxLayoutAlign="start start" class="color-primary">
 
@@ -21,11 +21,11 @@
       </mat-card-header>
       <img mat-card-image src="/assets/eventos/{{evento.img}}" alt="Photo of a Shiba Inu">
       <mat-card-content>
-        <div fxLayout="row wrap">
+        <div fxLayout="row wrap" fxLayoutAlign="center">
           <div *ngFor="let participacao of evento.participacoes" fxFlex="100" (click)="openDialog(participacao)">
             <strong fxFlex fxFlexAlign="center">{{participacao.integrante.apelido}}</strong>
-            <span>{{participacao.quilometragem}}</span>
-            <mat-icon>mode_edit</mat-icon>
+            <strong fxFlexAlign="center">{{participacao.quilometragem}} KM</strong>
+            <button fxFlexAlign="center" type="button" mat-icon-button><mat-icon>mode_edit</mat-icon></button>
           </div>
         </div>
       </mat-card-content>
