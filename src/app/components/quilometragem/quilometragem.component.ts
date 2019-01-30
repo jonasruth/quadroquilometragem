@@ -142,6 +142,7 @@ export class QuilometragemComponent implements OnInit {
 }
 
 export interface DialogData {
+  evento: Evento;
   integrante: Integrante;
   quilometragem: number;
 }
